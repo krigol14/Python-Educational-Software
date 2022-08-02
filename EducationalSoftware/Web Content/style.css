@@ -1,0 +1,261 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.register:hover {
+	color: #f65868;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1em;
+    color: #999;
+}
+
+.theory {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1em;
+    color: #000000;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #5375e2;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y:auto
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #7b95ea;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #7b95ea;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.download:hover {
+    background: #f65868 !important;
+    color: #fff !important;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+ul ul a {
+	font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #7b95ea;
+    cursor: pointer;
+}
+
+.visited {
+	font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #26a242;
+    cursor: pointer;
+}
+
+.not_visited {
+	font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #d63343;
+    cursor: pointer;
+}
+
+.testvisited {
+	font-size: 0.9em !important;
+    background: #26a242;
+    cursor: pointer;
+    width:200px;
+    color: #fff;
+}
+
+.testvisited:hover {
+	font-size: 0.9em !important;
+    background: #18672b;
+    cursor: pointer;
+    width:200px;
+    color: #fff;
+}
+
+.testnot_visited {
+	font-size: 0.9em !important;
+    background: #d63343;
+    cursor: pointer;
+    width:200px;
+    color: #fff;
+}
+
+.testnot_visited:hover {
+	font-size: 0.9em !important;
+    background: #aa222f;
+    cursor: pointer;
+    width:200px;
+    color: #fff;
+}
+
+.random {
+	font-size: 0.9em !important;
+    background: #7b95ea;
+    cursor: pointer;
+    width:200px;
+    color: #fff;
+}
+
+.random:hover {
+	font-size: 0.9em !important;
+    background: #3860e0;
+    cursor: pointer;
+    width:200px;
+    color: #fff;
+}
+
+button.test_option {
+    background: #f98691;
+    color: #fff;
+    width:100px;
+}
+
+button.test_option:hover {
+    background: #f65868 !important;
+    color: #fff !important;
+}
+
+input[type="radio"] {
+  margin-left: 35px;
+}
